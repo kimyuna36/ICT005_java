@@ -6,42 +6,58 @@ public class MonthTranslator {
 
 	public static void main(String[] args) {
 		
-		int number;
-		int marks;
-		char grade; 
-		String month	;
-		Scanner input = new Scanner(System.in);
+		String month;
 		
-		System.out.print("성적을 입력하시오:");
-	    marks = input.nextInt();
-		number = marks/10;
-		
-		switch (number)
-		{
-		case 10:	
-		case 9:
-			grade = 'A';
-			break;
+		Scanner scan = new Scanner(System.in);
+		System.out.print("월의 이름을 입력하시오: ");
+		month = scan.next();
 			
-		case 8:
-			grade = 'B';
+		int monthNumber;
+		switch (month) {
+		case "January":
+			monthNumber = 1;
 			break;
-			
-		case 7:
-			grade = 'C';
+		case "February":
+			monthNumber = 2;
 			break;
-			
-		case 6:
-			grade = 'D';
+		case "March":
+			monthNumber = 3;
 			break;
-			
+		case "April":
+		    monthNumber = 4;
+		    break;
+		case "May":
+		    monthNumber = 5;
+		    break;
+		case "June":
+			monthNumber = 6;
+			break;
+		case "July":
+			monthNumber = 7;
+			break;
+		case "August":
+			monthNumber = 8;
+		    break;
+		case "September":
+			monthNumber = 9;
+			break;
+		case "October":
+			monthNumber = 10;
+			break;
+		case "November":
+			monthNumber = 11;
+			break;
+		case "December":
+			monthNumber = 12;
+			break;
 		default:
-			grade = 'F';
-			break;
-		}
-		System.out.print("학점: "+ grade);
-
-		
+		    monthNumber = 0;
+		    break;
+		    
 	}
-
+		System.out.println(monthNumber);	
+}		
 }
+			
+		 
+		
