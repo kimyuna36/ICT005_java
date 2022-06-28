@@ -15,17 +15,17 @@ public class Q3_5_1 {
 		System.out.print("자신의 나이를 입력하시오:  ");
 		age= in.nextInt();
 		
-		if(gender=="F"&& age>=18) {
+		if(gender.equals("F")&& age>=18) {
 			System.out.print("WOMAN");
 		}
-		else if (gender=="F"&& age<18) {
+		else if (gender.equals("F")&& age<18) {
 			System.out.print("GIRL");
 		}
-		else if (gender=="M"&& age>=18) {
+		else if (gender.equals("M")&& age>=18) {
 			System.out.print("MAN");
 		}
-		else if (gender=="M"&& age<18)  {
-			System.out.print("BOY");
+		else if (gender.equals("M")&& age<18)  {
+			System.out.print("BOY");	
 		}
 	}
 
